@@ -1,0 +1,116 @@
+.stakd-wordmark {
+  font-family: "Space Grotesk", Inter, system-ui, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.42em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: rgba(248, 250, 252, 0.94);
+  text-shadow: 0 0 22px rgba(181, 255, 61, 0.08);
+}
+
+.stakd-brand {
+  gap: 0;
+  min-width: 138px;
+}
+
+.stakd-brand .stakd-wordmark {
+  font-size: 1.08rem;
+}
+
+.hero-wordmark {
+  display: inline-flex;
+  margin-bottom: 20px;
+  font-size: clamp(1.1rem, 2vw, 1.65rem);
+  color: rgba(248, 250, 252, 0.72);
+}
+
+.device-brandline {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(5,6,8,0.62);
+  backdrop-filter: blur(18px);
+  border-radius: 999px;
+  padding: 12px 16px;
+}
+
+.app-wordmark {
+  font-family: "Space Grotesk", Inter, system-ui, sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.34em;
+  color: rgba(248,250,252,0.94);
+}
+
+.device-status {
+  color: rgba(248,250,252,0.6);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.logo-watermark-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-logo {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 0;
+  font-size: clamp(1.2rem, 2vw, 1.95rem);
+  color: rgba(248,250,252,0.08);
+  pointer-events: none;
+}
+
+.logo-watermark-card > *:not(.card-logo) {
+  position: relative;
+  z-index: 1;
+}
+
+.section-wordmark {
+  display: inline-flex;
+  margin-bottom: 18px;
+  font-size: 0.9rem;
+  color: rgba(248,250,252,0.42);
+}
+
+.branded-heading {
+  position: relative;
+}
+
+.site-footer .stakd-wordmark {
+  font-size: 1rem;
+  color: rgba(248,250,252,0.82);
+}
+
+@media (max-width: 680px) {
+  .stakd-brand {
+    min-width: auto;
+  }
+
+  .stakd-brand .stakd-wordmark {
+    font-size: 0.9rem;
+    letter-spacing: 0.3em;
+  }
+
+  .hero-wordmark {
+    font-size: 0.9rem;
+    letter-spacing: 0.34em;
+  }
+
+  .device-brandline {
+    grid-template-columns: 1fr auto;
+  }
+
+  .device-status {
+    display: none;
+  }
+
+  .card-logo {
+    top: 18px;
+    right: 18px;
+    font-size: 1rem;
+  }
+}
