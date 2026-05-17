@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Stakd is an immersive fitness hub with goal-based workout plans, activity programming, progress tools, and telemedicine peptide consult pathways." />
-  <title>Stakd | Training, Activity & Peptide Telemedicine Hub</title>
+  <meta name="description" content="Stakd is an immersive fitness hub with goal-based workout plans, activity programming, progress tools, and a clinician-led peptide consult pathway." />
+  <title>Stakd | Training, Activity & Clinician Consult Hub</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="logo.css" />
 </head>
 <body>
   <div class="noise"></div>
@@ -17,9 +18,8 @@
   <div class="orb orb-three"></div>
 
   <header class="site-header" data-header>
-    <a class="brand" href="#top" aria-label="Stakd home">
-      <span class="brand-mark">S</span>
-      <span class="brand-text">STAKD</span>
+    <a class="brand stakd-brand" href="#top" aria-label="Stakd home">
+      <span class="stakd-wordmark">STAKD</span>
     </a>
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="#programs">Programs</a>
@@ -33,6 +33,7 @@
   <main id="top">
     <section class="hero section-shell">
       <div class="hero-copy reveal">
+        <div class="hero-wordmark stakd-wordmark" aria-hidden="true">STAKD</div>
         <div class="eyebrow">Fitness plans + recovery intelligence</div>
         <h1>Your daily training stack. Built for the body you’re chasing.</h1>
         <p class="hero-subtitle">Stakd gives members structured workout plans, weekly activity programming, progress tracking, and a clinician-led peptide consult pathway in one premium performance hub.</p>
@@ -49,8 +50,9 @@
 
       <div class="hero-visual reveal delay-1" aria-label="Interactive Stakd app preview">
         <div class="device-card tilt-card">
-          <div class="device-topline">
-            <span>Today’s Stack</span>
+          <div class="device-brandline">
+            <span class="app-wordmark">STAKD</span>
+            <span class="device-status">Today’s Stack</span>
             <span class="pulse-dot"></span>
           </div>
           <div class="streak-ring" aria-hidden="true">
@@ -86,7 +88,7 @@
         </div>
         <div class="floating-metric metric-one">+12 PR alerts</div>
         <div class="floating-metric metric-two">Macro aware</div>
-        <div class="floating-metric metric-three">Rx consult ready</div>
+        <div class="floating-metric metric-three">Consult ready</div>
       </div>
     </section>
 
@@ -98,7 +100,8 @@
     </section>
 
     <section class="value-grid section-shell reveal" id="features">
-      <div class="feature-card large-card">
+      <div class="feature-card large-card logo-watermark-card">
+        <span class="card-logo stakd-wordmark">STAKD</span>
         <span class="card-icon">01</span>
         <h2>Know exactly what to train every day.</h2>
         <p>Daily programming, weekly splits, warmups, finishers, activity targets, and recovery blocks mapped by goal.</p>
@@ -116,12 +119,13 @@
       <div class="feature-card">
         <span class="card-icon">04</span>
         <h3>Telemedicine pathway</h3>
-        <p>Route qualified users to a licensed provider consult for peptide therapy review, labs, and prescription eligibility.</p>
+        <p>Route qualified users to a licensed provider consult for peptide therapy review, labs, and clinical eligibility discussion.</p>
       </div>
     </section>
 
     <section class="quiz-section section-shell" id="quiz">
-      <div class="section-heading reveal">
+      <div class="section-heading reveal branded-heading">
+        <span class="section-wordmark stakd-wordmark">STAKD</span>
         <p class="eyebrow">Interactive onboarding</p>
         <h2>Find your Stakd plan.</h2>
         <p>Answer three fast questions. The page builds a training recommendation and weekly template on the spot.</p>
@@ -170,7 +174,8 @@
     </section>
 
     <section class="programs section-shell" id="programs">
-      <div class="section-heading reveal">
+      <div class="section-heading reveal branded-heading">
+        <span class="section-wordmark stakd-wordmark">STAKD</span>
         <p class="eyebrow">Preset workout library</p>
         <h2>Programs for every goal.</h2>
         <p>Filter the library, preview a week, and turn any program into a training calendar.</p>
@@ -188,7 +193,8 @@
     </section>
 
     <section class="planner section-shell" id="planner">
-      <div class="planner-card reveal">
+      <div class="planner-card reveal logo-watermark-card">
+        <span class="card-logo stakd-wordmark">STAKD</span>
         <div class="planner-copy">
           <p class="eyebrow">Weekly calendar builder</p>
           <h2>Turn a goal into a 7-day plan.</h2>
@@ -209,7 +215,8 @@
     </section>
 
     <section class="activities section-shell" id="activities">
-      <div class="section-heading reveal">
+      <div class="section-heading reveal branded-heading">
+        <span class="section-wordmark stakd-wordmark">STAKD</span>
         <p class="eyebrow">Activity plans</p>
         <h2>Stack workouts with daily movement.</h2>
         <p>Preset activity plans add structure beyond lifting: walking, biking, sprints, mobility, sports, and recovery.</p>
@@ -225,15 +232,16 @@
     </section>
 
     <section class="peptide-section section-shell" id="peptides">
-      <div class="peptide-shell reveal">
+      <div class="peptide-shell reveal logo-watermark-card">
+        <span class="card-logo stakd-wordmark">STAKD</span>
         <div class="peptide-copy">
           <p class="eyebrow">Telemedicine peptide pathway</p>
           <h2>Training is the base. Medical review is the gate.</h2>
-          <p>Stakd can route users to a licensed telemedicine provider to discuss whether peptide therapy is clinically appropriate. Prescriptions are never guaranteed and depend on medical history, labs, provider judgment, state rules, and pharmacy availability.</p>
+          <p>Stakd can route users to a licensed telemedicine provider to discuss whether peptide therapy is clinically appropriate. Treatment is never guaranteed and depends on medical history, labs, provider judgment, state rules, and pharmacy availability.</p>
           <div class="peptide-steps">
             <div><strong>1</strong><span>Complete intake</span></div>
             <div><strong>2</strong><span>Provider review + labs if needed</span></div>
-            <div><strong>3</strong><span>Prescription decision + follow-up</span></div>
+            <div><strong>3</strong><span>Clinical decision + follow-up</span></div>
           </div>
           <a class="primary-btn magnetic" href="#telehealthForm">Talk to Telemedicine</a>
         </div>
@@ -246,7 +254,8 @@
     </section>
 
     <section class="telehealth-form section-shell" id="telehealthForm">
-      <div class="form-card reveal">
+      <div class="form-card reveal logo-watermark-card">
+        <span class="card-logo stakd-wordmark">STAKD</span>
         <div>
           <p class="eyebrow">Lead capture</p>
           <h2>Request a Stakd consult.</h2>
@@ -264,26 +273,27 @@
           </select>
           <textarea name="message" placeholder="Goal, age range, training history, and anything the care team should know"></textarea>
           <button class="primary-btn" type="submit">Submit Request</button>
-          <p class="form-note">By submitting, users acknowledge this is not emergency care and does not create a prescription guarantee.</p>
+          <p class="form-note">By submitting, users acknowledge this is not emergency care and does not guarantee treatment.</p>
         </form>
       </div>
     </section>
 
     <section class="faq section-shell">
-      <div class="section-heading reveal">
+      <div class="section-heading reveal branded-heading">
+        <span class="section-wordmark stakd-wordmark">STAKD</span>
         <p class="eyebrow">Questions</p>
         <h2>Built to feel premium, clear, and conversion-ready.</h2>
       </div>
       <div class="faq-list reveal delay-1">
         <details open><summary>Is this a workout library or a guided plan?</summary><p>Both. The library gives users preset plans, while the planner converts the goal into a weekly schedule.</p></details>
         <details><summary>Can users change programs?</summary><p>Yes. Filters and previews let users move between muscle, fat loss, strength, mobility, athletic, and longevity tracks.</p></details>
-        <details><summary>Does Stakd prescribe peptides?</summary><p>No website should guarantee prescriptions. Stakd routes users to telemedicine intake where licensed providers decide whether treatment is appropriate.</p></details>
+        <details><summary>Does Stakd prescribe peptides?</summary><p>Stakd routes users to telemedicine intake where licensed providers decide whether treatment is appropriate.</p></details>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="brand footer-brand"><span class="brand-mark">S</span><span class="brand-text">STAKD</span></div>
+    <div class="brand footer-brand stakd-brand"><span class="stakd-wordmark">STAKD</span></div>
     <p>Train hard. Recover smart. Stack the day.</p>
     <div class="footer-links">
       <a href="#programs">Programs</a>
