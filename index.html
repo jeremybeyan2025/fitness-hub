@@ -8,13 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="stakd-live.css?v=6" />
+  <link rel="stylesheet" href="stakd-live.css?v=7" />
+  <link rel="stylesheet" href="stakd-intake.css?v=2" />
 </head>
 <body>
   <header class="topbar">
     <div class="container nav">
       <a class="logo" href="#top">STAKD</a>
       <nav class="navlinks" aria-label="Main navigation">
+        <a href="#plan">Plan Builder</a>
         <a href="#programs">Programs</a>
         <a href="#performance">Performance</a>
         <a href="#nutrition">Nutrition</a>
@@ -22,7 +24,7 @@
       </nav>
       <div class="navcta">
         <a class="btn btn-dark" href="#plan">Build My Plan</a>
-        <a class="btn btn-primary" href="#clinician">Request Consult</a>
+        <a class="btn btn-primary" href="#consult-form">Request Guidance</a>
       </div>
     </div>
   </header>
@@ -38,7 +40,7 @@
           <div class="hero-actions">
             <a class="btn btn-primary" href="#plan">Build My Plan</a>
             <a class="btn btn-dark" href="#programs">Explore Programs</a>
-            <a class="btn btn-dark" href="#clinician">Request Consult</a>
+            <a class="btn btn-dark" href="#consult-form">Request Guidance</a>
           </div>
           <div class="stats">
             <div class="stat"><strong>40+</strong><span>Preset plans</span></div>
@@ -56,13 +58,34 @@
 
     <section class="section" id="plan">
       <div class="container">
-        <div class="section-head"><span class="eyebrow">Find your stack</span><h2>Pick the goal. STAKD builds the direction.</h2><p>Choose the path that fits your body, schedule, and ambition. The experience should feel like a premium app from the first click.</p></div>
-        <div class="plan-grid"><button class="plan-card active" data-plan="fat"><span class="tag">Fat Loss</span><h3>Lean & Defined</h3><p>Strength, daily movement, cardio, and nutrition structure.</p></button><button class="plan-card" data-plan="muscle"><span class="tag">Muscle</span><h3>Size & Shape</h3><p>Progressive volume, protein-forward meals, and recovery focus.</p></button><button class="plan-card" data-plan="strength"><span class="tag">Strength</span><h3>Power Output</h3><p>Lift heavy, track progress, and manage readiness.</p></button><button class="plan-card" data-plan="athletic"><span class="tag">Athletic</span><h3>Speed Engine</h3><p>Intervals, sprints, athletic movement, and recovery cues.</p></button></div>
-        <div class="result glass" id="planResult"><div><span class="mini">Recommended</span><h3>Lean Performance Stack</h3><p>Four training days, two movement or cardio days, and one focused recovery day. Built for body composition without losing output.</p></div><ul><li>Weekly plan with clear workout structure</li><li>Performance meals and macro-aware guidance</li><li>Recovery prompts and optional consult pathway</li></ul></div>
+        <div class="section-head"><span class="eyebrow">STAKD Plan Builder</span><h2>Enter your basics. Get guided to the right workout path.</h2><p>Users enter age, height, weight, training level, schedule, and goal. STAKD generates a recommended track, a weekly split, and a next-step consult prompt for deeper guidance.</p></div>
+        <div class="builder-grid">
+          <div class="builder-card">
+            <form class="builder-form" id="profileBuilder">
+              <div class="field-grid">
+                <div class="field"><label for="age">Age</label><input id="age" name="age" type="number" min="13" max="95" value="35" required></div>
+                <div class="field"><label for="weight">Weight</label><input id="weight" name="weight" type="number" min="70" max="450" value="185" required></div>
+              </div>
+              <div class="field-grid">
+                <div class="field"><label for="feet">Height — feet</label><input id="feet" name="feet" type="number" min="3" max="8" value="5" required></div>
+                <div class="field"><label for="inches">Height — inches</label><input id="inches" name="inches" type="number" min="0" max="11" value="10" required></div>
+              </div>
+              <div class="field"><label for="goal">Primary goal</label><select id="goal" name="goal"><option value="fat-loss">Lose fat / lean out</option><option value="muscle">Build muscle</option><option value="strength">Get stronger</option><option value="athletic">Athletic performance</option><option value="mobility">Mobility and movement quality</option><option value="longevity">Longevity and energy</option></select></div>
+              <div class="field-grid">
+                <div class="field"><label for="level">Training level</label><select id="level" name="level"><option value="beginner">Beginner</option><option value="intermediate" selected>Intermediate</option><option value="advanced">Advanced</option></select></div>
+                <div class="field"><label for="days">Days per week</label><select id="days" name="days"><option value="3">3 days</option><option value="4" selected>4 days</option><option value="5">5 days</option><option value="6">6 days</option></select></div>
+              </div>
+              <div class="field"><label for="equipment">Equipment access</label><select id="equipment" name="equipment"><option value="full-gym">Full gym</option><option value="dumbbells">Dumbbells</option><option value="bodyweight">Bodyweight only</option><option value="bands">Bands / light equipment</option></select></div>
+              <button class="btn btn-primary" type="submit">Generate My STAKD Plan</button>
+              <p class="builder-note">This tool gives a fitness starting point, not medical advice. For deeper support, users can request a guided consult.</p>
+            </form>
+          </div>
+          <div class="builder-card builder-result" id="profileResult"></div>
+        </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="programs"><div class="container"><div class="section-head"><span class="eyebrow">Workout library</span><h2>Programs built like a luxury fitness product lineup.</h2><p>Strength, muscle, fat loss, mobility, longevity, and athletic tracks — organized with the same premium app feel as the ad creatives.</p></div><div class="split"><div class="copy-panel"><span class="mini">STAKD</span><h3>Browse by goal. Train with intent.</h3><p>Every program feels structured, polished, and easy to start. No generic blocks. No cheap cards.</p><div class="pillrow"><span>Strength</span><span>Fat Loss</span><span>Muscle</span><span>Mobility</span><span>Longevity</span><span>Athletic</span></div></div><div class="imagebox phone"><img src="7CD0C99C-878E-4809-B4AB-79881C3867FA.png" alt="STAKD workout program interface" loading="lazy" /></div></div></div></section>
+    <section class="section section-alt" id="programs"><div class="container"><div class="section-head"><span class="eyebrow">Workout library</span><h2>Programs built like a luxury fitness product lineup.</h2><p>Each category now opens a detail page with moving stats, weekly breakdowns, and deeper plan logic.</p></div><div class="split"><div class="copy-panel"><span class="mini">STAKD</span><h3>Browse by goal. Train with intent.</h3><p>Tap a category to open the full track page and see the plan logic, animated counters, focus bars, and weekly structure.</p><div class="pillrow"><a href="track.html?track=strength">Strength</a><a href="track.html?track=fat-loss">Fat Loss</a><a href="track.html?track=muscle">Muscle</a><a href="track.html?track=mobility">Mobility</a><a href="track.html?track=longevity">Longevity</a><a href="track.html?track=athletic">Athletic</a></div></div><div class="imagebox phone"><img src="7CD0C99C-878E-4809-B4AB-79881C3867FA.png" alt="STAKD workout program interface" loading="lazy" /></div></div></div></section>
 
     <section class="section" id="performance"><div class="container"><div class="section-head"><span class="eyebrow">Performance tracking</span><h2>Make every section feel like a campaign spread.</h2><p>Performance visuals carry the site: effort, recovery, heart-rate zones, progressive overload, and readiness all work together.</p></div><div class="performance-grid"><article class="image-card wide"><img src="663CAD2B-C7AD-40ED-81AB-01A53260FF02.png" alt="STAKD strength scene" loading="lazy" /><div class="overlay"><span class="mini">Strength</span><h3>Stronger every day.</h3><p>Track reps, volume, and PRs with a premium performance system.</p></div></article><article class="image-card"><img src="FFBBD35E-8C55-4D1B-B885-2DECCF28022A.png" alt="STAKD conditioning scene" loading="lazy" /><div class="overlay"><span class="mini">Conditioning</span><h3>Output under control.</h3><p>Heart-rate zones, intervals, recovery, and calorie burn in one view.</p></div></article><article class="image-card"><img src="EA01E1B7-C881-4C49-8B87-0AC72D064BD4.png" alt="STAKD app analytics" loading="lazy" /><div class="overlay"><span class="mini">Analytics</span><h3>Know the week.</h3><p>Readiness, macros, sleep, progress, and training load in one dashboard.</p></div></article></div></div></section>
 
@@ -76,6 +99,7 @@
   </main>
 
   <footer class="footer"><div class="container footer-shell"><div><a class="logo" href="#top">STAKD</a><p>Train hard. Recover smart. Fuel your potential.</p></div><div class="footer-links"><a href="#programs">Programs</a><a href="#performance">Performance</a><a href="#nutrition">Nutrition</a><a href="#clinician">Consult</a></div></div></footer>
-  <script src="stakd-live.js?v=6"></script>
+  <script src="stakd-live.js?v=7"></script>
+  <script src="stakd-intake.js?v=2"></script>
 </body>
 </html>
