@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STAKD | Plan Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stakd-live.css?v=8" />
+  <link rel="stylesheet" href="stakd-intake.css?v=2" />
+  <link rel="stylesheet" href="pages.css?v=1" />
+</head>
+<body>
+  <header class="topbar"><div class="container nav"><a class="logo" href="index.html">STAKD</a><button class="menu-toggle" data-menu-toggle aria-label="Open navigation" aria-expanded="false">☰</button><nav class="navlinks"><a href="index.html">Home</a><a class="active" href="plan-builder.html">Plan Builder</a><a href="programs.html">Programs</a><a href="performance.html">Performance</a><a href="nutrition.html">Nutrition</a><a href="consult.html">Consult</a></nav><div class="navcta"><a class="btn btn-primary" href="consult.html">Request Guidance</a></div></div></header>
+  <main>
+    <section class="page-hero"><div class="container page-hero-grid"><div><span class="eyebrow">STAKD Plan Builder</span><h1>Enter your profile. Get guided to the right track.</h1><p>Use age, height, weight, goals, training level, equipment, and weekly availability to generate a recommended workout path and weekly structure.</p><div class="hero-mini-nav"><a href="programs.html">Browse Programs</a><a href="consult.html">Request Guidance</a></div></div><div class="page-hero-img"><img src="EA01E1B7-C881-4C49-8B87-0AC72D064BD4.png" alt="STAKD analytics dashboard"></div></div></section>
+    <section class="section" id="plan"><div class="container"><div class="builder-grid"><div class="builder-card"><form class="builder-form" id="profileBuilder"><div class="field-grid"><div class="field"><label for="age">Age</label><input id="age" name="age" type="number" min="13" max="95" value="35" required></div><div class="field"><label for="weight">Weight</label><input id="weight" name="weight" type="number" min="70" max="450" value="185" required></div></div><div class="field-grid"><div class="field"><label for="feet">Height — feet</label><input id="feet" name="feet" type="number" min="3" max="8" value="5" required></div><div class="field"><label for="inches">Height — inches</label><input id="inches" name="inches" type="number" min="0" max="11" value="10" required></div></div><div class="field"><label for="goal">Primary goal</label><select id="goal" name="goal"><option value="fat-loss">Lose fat / lean out</option><option value="muscle">Build muscle</option><option value="strength">Get stronger</option><option value="athletic">Athletic performance</option><option value="mobility">Mobility and movement quality</option><option value="longevity">Longevity and energy</option></select></div><div class="field-grid"><div class="field"><label for="level">Training level</label><select id="level" name="level"><option value="beginner">Beginner</option><option value="intermediate" selected>Intermediate</option><option value="advanced">Advanced</option></select></div><div class="field"><label for="days">Days per week</label><select id="days" name="days"><option value="3">3 days</option><option value="4" selected>4 days</option><option value="5">5 days</option><option value="6">6 days</option></select></div></div><div class="field"><label for="equipment">Equipment access</label><select id="equipment" name="equipment"><option value="full-gym">Full gym</option><option value="dumbbells">Dumbbells</option><option value="bodyweight">Bodyweight only</option><option value="bands">Bands / light equipment</option></select></div><button class="btn btn-primary" type="submit">Generate My STAKD Plan</button><p class="builder-note">This tool gives a fitness starting point. For deeper support, users can request guided help.</p></form></div><div class="builder-card builder-result" id="profileResult"></div></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-shell"><div><a class="logo" href="index.html">STAKD</a><p>Build the right path first.</p></div><div class="footer-links"><a href="programs.html">Programs</a><a href="consult.html">Consult</a></div></div></footer>
+  <script src="nav.js?v=1"></script><script src="stakd-intake.js?v=2"></script>
+</body>
+</html>
