@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stakd is an immersive fitness hub with goal-based workout plans, activity programming, progress tools, and telemedicine peptide consult pathways." />
+  <title>Stakd | Training, Activity & Peptide Telemedicine Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+  <div class="orb orb-three"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Stakd home">
+      <span class="brand-mark">S</span>
+      <span class="brand-text">STAKD</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#programs">Programs</a>
+      <a href="#planner">Planner</a>
+      <a href="#activities">Activities</a>
+      <a href="#peptides">Peptides</a>
+    </nav>
+    <a class="nav-cta" href="#quiz">Find My Stack</a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">Fitness plans + recovery intelligence</div>
+        <h1>Your daily training stack. Built for the body you’re chasing.</h1>
+        <p class="hero-subtitle">Stakd gives members structured workout plans, weekly activity programming, progress tracking, and a clinician-led peptide consult pathway in one premium performance hub.</p>
+        <div class="hero-actions">
+          <a class="primary-btn magnetic" href="#quiz">Build My Plan</a>
+          <a class="secondary-btn" href="#programs">Browse Workouts</a>
+        </div>
+        <div class="hero-proof">
+          <div><strong>40+</strong><span>Preset plans</span></div>
+          <div><strong>7</strong><span>Daily schedule views</span></div>
+          <div><strong>1</strong><span>Telehealth pathway</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1" aria-label="Interactive Stakd app preview">
+        <div class="device-card tilt-card">
+          <div class="device-topline">
+            <span>Today’s Stack</span>
+            <span class="pulse-dot"></span>
+          </div>
+          <div class="streak-ring" aria-hidden="true">
+            <span>82%</span>
+            <small>weekly load</small>
+          </div>
+          <div class="mini-schedule">
+            <button class="day-pill active">M</button>
+            <button class="day-pill">T</button>
+            <button class="day-pill">W</button>
+            <button class="day-pill">T</button>
+            <button class="day-pill">F</button>
+            <button class="day-pill">S</button>
+            <button class="day-pill">S</button>
+          </div>
+          <article class="workout-preview-card">
+            <div>
+              <span class="tag">Strength</span>
+              <h3>Push Power Build</h3>
+              <p>Chest, shoulders, triceps + finisher</p>
+            </div>
+            <strong>46 min</strong>
+          </article>
+          <article class="workout-preview-card muted-card">
+            <div>
+              <span class="tag">Recovery</span>
+              <h3>Zone 2 Walk</h3>
+              <p>Low-impact conditioning</p>
+            </div>
+            <strong>30 min</strong>
+          </article>
+          <div class="coach-bubble">No guessing. Press start. Execute the stack.</div>
+        </div>
+        <div class="floating-metric metric-one">+12 PR alerts</div>
+        <div class="floating-metric metric-two">Macro aware</div>
+        <div class="floating-metric metric-three">Rx consult ready</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Training focus ticker">
+      <div class="ticker-track">
+        <span>Strength</span><span>Fat Loss</span><span>Muscle</span><span>Mobility</span><span>Longevity</span><span>Athletic</span><span>Recovery</span><span>Peptide Consults</span>
+        <span>Strength</span><span>Fat Loss</span><span>Muscle</span><span>Mobility</span><span>Longevity</span><span>Athletic</span><span>Recovery</span><span>Peptide Consults</span>
+      </div>
+    </section>
+
+    <section class="value-grid section-shell reveal" id="features">
+      <div class="feature-card large-card">
+        <span class="card-icon">01</span>
+        <h2>Know exactly what to train every day.</h2>
+        <p>Daily programming, weekly splits, warmups, finishers, activity targets, and recovery blocks mapped by goal.</p>
+      </div>
+      <div class="feature-card">
+        <span class="card-icon">02</span>
+        <h3>Interactive plan finder</h3>
+        <p>Choose goal, time, equipment, intensity, and experience. Stakd recommends a training stack instantly.</p>
+      </div>
+      <div class="feature-card">
+        <span class="card-icon">03</span>
+        <h3>Preset workouts</h3>
+        <p>Strength, bodybuilding, fat-loss circuits, mobility flows, beginner plans, endurance, and hybrid training.</p>
+      </div>
+      <div class="feature-card">
+        <span class="card-icon">04</span>
+        <h3>Telemedicine pathway</h3>
+        <p>Route qualified users to a licensed provider consult for peptide therapy review, labs, and prescription eligibility.</p>
+      </div>
+    </section>
+
+    <section class="quiz-section section-shell" id="quiz">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Interactive onboarding</p>
+        <h2>Find your Stakd plan.</h2>
+        <p>Answer three fast questions. The page builds a training recommendation and weekly template on the spot.</p>
+      </div>
+      <div class="quiz-grid reveal delay-1">
+        <div class="quiz-panel">
+          <label for="goalSelect">Primary goal</label>
+          <select id="goalSelect">
+            <option value="fat-loss">Lose fat + tighten up</option>
+            <option value="muscle">Build muscle</option>
+            <option value="strength">Get stronger</option>
+            <option value="athletic">Athletic performance</option>
+            <option value="mobility">Mobility + pain-free movement</option>
+            <option value="longevity">Longevity + energy</option>
+          </select>
+
+          <label for="timeSelect">Time per workout</label>
+          <select id="timeSelect">
+            <option value="30">30 minutes</option>
+            <option value="45" selected>45 minutes</option>
+            <option value="60">60 minutes</option>
+            <option value="75">75 minutes</option>
+          </select>
+
+          <label for="equipmentSelect">Equipment</label>
+          <select id="equipmentSelect">
+            <option value="bodyweight">Bodyweight only</option>
+            <option value="dumbbells">Dumbbells</option>
+            <option value="full-gym" selected>Full gym</option>
+            <option value="bands">Bands + light equipment</option>
+          </select>
+
+          <button class="primary-btn full-width" id="generateStack">Generate My Stack</button>
+        </div>
+        <div class="result-panel" id="quizResult" aria-live="polite">
+          <span class="tag">Recommended</span>
+          <h3>Lean Strength Stack</h3>
+          <p>4 strength days, 2 conditioning days, 1 recovery day. Designed to build shape while keeping the weekly workload sustainable.</p>
+          <ul>
+            <li>Daily workouts with exact sets, reps, and finishers.</li>
+            <li>Zone 2 and interval conditioning built in.</li>
+            <li>Recovery prompts and peptide consult CTA when relevant.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs section-shell" id="programs">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Preset workout library</p>
+        <h2>Programs for every goal.</h2>
+        <p>Filter the library, preview a week, and turn any program into a training calendar.</p>
+      </div>
+      <div class="filter-row reveal delay-1" role="tablist" aria-label="Workout program filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="fat-loss">Fat Loss</button>
+        <button class="filter-btn" data-filter="muscle">Muscle</button>
+        <button class="filter-btn" data-filter="strength">Strength</button>
+        <button class="filter-btn" data-filter="athletic">Athletic</button>
+        <button class="filter-btn" data-filter="mobility">Mobility</button>
+        <button class="filter-btn" data-filter="longevity">Longevity</button>
+      </div>
+      <div class="program-grid" id="programGrid"></div>
+    </section>
+
+    <section class="planner section-shell" id="planner">
+      <div class="planner-card reveal">
+        <div class="planner-copy">
+          <p class="eyebrow">Weekly calendar builder</p>
+          <h2>Turn a goal into a 7-day plan.</h2>
+          <p>Pick your training emphasis and Stakd lays out the week: lifts, cardio, mobility, rest, and recovery.</p>
+          <div class="planner-controls">
+            <select id="plannerGoal" aria-label="Planner goal">
+              <option value="fat-loss">Fat Loss</option>
+              <option value="muscle">Muscle</option>
+              <option value="strength">Strength</option>
+              <option value="athletic">Athletic</option>
+              <option value="longevity">Longevity</option>
+            </select>
+            <button class="secondary-btn" id="buildWeek">Build Week</button>
+          </div>
+        </div>
+        <div class="week-board" id="weekBoard" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="activities section-shell" id="activities">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Activity plans</p>
+        <h2>Stack workouts with daily movement.</h2>
+        <p>Preset activity plans add structure beyond lifting: walking, biking, sprints, mobility, sports, and recovery.</p>
+      </div>
+      <div class="activity-grid reveal delay-1">
+        <article class="activity-card"><span>Walking Base</span><h3>8,000 Step Reset</h3><p>Daily walk targets, posture cues, and low-stress calorie burn.</p></article>
+        <article class="activity-card"><span>Bike Conditioning</span><h3>Assault Sprint Stack</h3><p>Short interval sessions for power output and conditioning.</p></article>
+        <article class="activity-card"><span>Heart Health</span><h3>Zone 2 Engine</h3><p>30-45 minute low-intensity cardio days for endurance and recovery.</p></article>
+        <article class="activity-card"><span>Sport</span><h3>Hooper Mobility</h3><p>Warmups, ankles, hips, knees, and shooting-day recovery work.</p></article>
+        <article class="activity-card"><span>Recovery</span><h3>Nightly Downshift</h3><p>Breathing, stretching, and sleep-prep movement blocks.</p></article>
+        <article class="activity-card"><span>Work Capacity</span><h3>Hybrid Grind</h3><p>Strength, carries, circuits, and work-based conditioning days.</p></article>
+      </div>
+    </section>
+
+    <section class="peptide-section section-shell" id="peptides">
+      <div class="peptide-shell reveal">
+        <div class="peptide-copy">
+          <p class="eyebrow">Telemedicine peptide pathway</p>
+          <h2>Training is the base. Medical review is the gate.</h2>
+          <p>Stakd can route users to a licensed telemedicine provider to discuss whether peptide therapy is clinically appropriate. Prescriptions are never guaranteed and depend on medical history, labs, provider judgment, state rules, and pharmacy availability.</p>
+          <div class="peptide-steps">
+            <div><strong>1</strong><span>Complete intake</span></div>
+            <div><strong>2</strong><span>Provider review + labs if needed</span></div>
+            <div><strong>3</strong><span>Prescription decision + follow-up</span></div>
+          </div>
+          <a class="primary-btn magnetic" href="#telehealthForm">Talk to Telemedicine</a>
+        </div>
+        <div class="peptide-cards">
+          <article><span>Recovery</span><h3>Performance review</h3><p>Discuss recovery, soreness, sleep, and training load with a clinician.</p></article>
+          <article><span>Body Composition</span><h3>Metabolic support</h3><p>Provider-guided review for eligible users pursuing weight and energy goals.</p></article>
+          <article><span>Longevity</span><h3>Optimization consult</h3><p>Labs, risk review, and conservative medical oversight before any therapy.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="telehealth-form section-shell" id="telehealthForm">
+      <div class="form-card reveal">
+        <div>
+          <p class="eyebrow">Lead capture</p>
+          <h2>Request a Stakd consult.</h2>
+          <p>This demo form is ready to connect to your CRM, email, or telemedicine intake platform.</p>
+        </div>
+        <form id="leadForm">
+          <input type="text" name="name" placeholder="Full name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <select name="interest" required>
+            <option value="">Primary interest</option>
+            <option>Workout plan only</option>
+            <option>Workout + nutrition</option>
+            <option>Telemedicine peptide consult</option>
+            <option>Full Stakd performance plan</option>
+          </select>
+          <textarea name="message" placeholder="Goal, age range, training history, and anything the care team should know"></textarea>
+          <button class="primary-btn" type="submit">Submit Request</button>
+          <p class="form-note">By submitting, users acknowledge this is not emergency care and does not create a prescription guarantee.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Questions</p>
+        <h2>Built to feel premium, clear, and conversion-ready.</h2>
+      </div>
+      <div class="faq-list reveal delay-1">
+        <details open><summary>Is this a workout library or a guided plan?</summary><p>Both. The library gives users preset plans, while the planner converts the goal into a weekly schedule.</p></details>
+        <details><summary>Can users change programs?</summary><p>Yes. Filters and previews let users move between muscle, fat loss, strength, mobility, athletic, and longevity tracks.</p></details>
+        <details><summary>Does Stakd prescribe peptides?</summary><p>No website should guarantee prescriptions. Stakd routes users to telemedicine intake where licensed providers decide whether treatment is appropriate.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="brand footer-brand"><span class="brand-mark">S</span><span class="brand-text">STAKD</span></div>
+    <p>Train hard. Recover smart. Stack the day.</p>
+    <div class="footer-links">
+      <a href="#programs">Programs</a>
+      <a href="#planner">Planner</a>
+      <a href="#peptides">Peptides</a>
+      <a href="#quiz">Find My Stack</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="programModal" aria-hidden="true" role="dialog" aria-label="Program preview">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel">
+      <button class="modal-close" data-close-modal aria-label="Close modal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
